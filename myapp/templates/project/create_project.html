@@ -1,0 +1,11 @@
+{% extends "layoust/base.html"%}
+{% block content %}
+<h1>proyecto nuevo</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button>
+        save
+    </button>
+</form>
+{% endblock %}

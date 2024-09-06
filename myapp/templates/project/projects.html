@@ -1,0 +1,15 @@
+{% extends "layoust/base.html"%}
+
+{% block content %}
+<h1>projects</h1>
+
+{% for project in projects %}
+
+<article class="cart">
+    <a href="">
+        {{project.namme}}
+    </a>
+</article>
+
+{% endfor %}
+{% endblock %}
